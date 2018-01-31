@@ -44,15 +44,27 @@
 //$formGroup.append(el)
 // })
 
-function mostrarModal(){
-  const noMostrarModal = JSON.parse(localStorage.noMostrarModal);
-  if(!noMostrarModal){
-    $('#modalOferta').modal();  
-  }
+// function mostrarModal(){
+//   const noMostrarModal = JSON.parse("localStorage.noMostrarModal");
+//   if(!noMostrarModal){
+//     $('#modalOferta').modal();  
+//   }
   
-  $('#btnNoRegistrar').click(function (ev){
+//   $('#btnNoRegistrar').click(function (ev){
+//     localStorage.noMostrarModal = true;
+//     localStorage.noMostrarModal =! 0;
+//   });
+
+// }
+function mostrarModal() { // eslint-disable-line no-func-assign, no-unused-vars
+  $('#btnNoRegistrar').click(function (eve) { // eslint-disable-line no-unused-vars
     localStorage.noMostrarModal = true;
-  })
+  });
+  const mostrar = (localStorage.noMostrarModal != 'undefined') ? localStorage.noMostrarModal : 'false';
+  if (!mostrar) {
+    // {backdrop: 'static', keyboard: false} evita que al realizar  click fuera de la ventana esta no se cierre
+    $('#modalOferta').modal({ backdrop: 'static', keyboard: false });
+  }
 }
 
 const $filtrosToggle = $('#filtrosToggle')
