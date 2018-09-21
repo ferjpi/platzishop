@@ -1,0 +1,234 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+#header-container{
+	background-color: #131515;
+	color: white;
+}
+/*.colum{
+	border:1px solid red;
+	flex-direction: column;
+}
+.row{
+	border:1px solid blue;
+}*/
+
+#menu-container,
+#info-container{
+	background-color: #2b2c28;
+}
+#menu-container .nav-link{
+	color: white;
+}
+.btn.btn-platzi{
+	background-color: #4d4f48;
+	color: white;
+}
+.btn.btn-platzi:hover{
+	background-color: #8ab542;
+}
+input.form-control:focus{
+	border-color: #99c84a;
+}
+#header-container .login,
+#header-container .navbar-toggler{
+	color:white;
+}
+#info-container h4{
+	margin: 1em 0;
+	color: white;
+}
+#info-container img.img-fluid{
+	margin-top: 20px;
+}
+#search-bar{
+	margin-bottom: 1em;
+}
+#footer-container .input-group{
+	margin-bottom: 1em;
+}
+#footer-container label{
+	margin-top: 1em;
+}
+#footer-container button{
+	background-color: #4d4f48;
+	color: white;
+}
+#footer-container button.form-text{
+	margin-top: 0;
+}
+#footer-container{
+	background-color: #131515;
+	color:white;
+	padding: 3em 0;
+}
+#footer-container h4{
+	font-weight: bold;
+	font-size: 18px;
+}
+#footer-container .nav-link{
+	color:white;
+	padding: .2rem 1rem;
+}
+#breadcrumbs-container .breadcrumb{
+	background-color: white;
+	padding-left: 0;
+}
+#breadcrumbs-container .breadcrumb .breadcrumb-item{
+	color:#1c3643;
+}
+#breadcrumbs-container .breadcrumb .breadcrumb-item.active{
+	color: #95a5a6;
+}
+#filtros-container .list-group-item.active
+{
+	background-color: #7e7f7c;
+	border-color:  #7e7f7c;
+}
+
+#productos-container .list-group+.list-group {
+	margin-bottom: 1em;
+}
+#filtrosToggle{
+	margin-bottom: .5em;
+	outline: 0;
+}
+#filtrosToggle h5{
+	margin-bottom: 0;
+}
+
+#productos-container .listado-productos{
+	margin-bottom: 1em;
+}
+#productos-container .listado-productos .card{
+	margin-bottom: .5em;
+}
+#paginator-container .page-item.active .page-link{
+	background-color: #7e7f7c;
+	border-color:  #7e7f7c;
+}
+.page-link,
+.page-link:hover,
+.page-item.disabled{
+	color: #7e7f7c;
+}
+
+/* productos */
+.listado-productos .card-text{
+	font-size: .7rem;
+	text-align: center;
+}
+.listado-productos .card-text strong{
+	font-size: 1.1rem;
+}
+
+
+/* productos */
+
+/* Resumen del pedido */
+#resumen-container{
+	margin-bottom: 30px;
+}
+.box-main{
+	display: grid;
+	border: 3px solid lightgray;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(6,50px);
+	grid-template-areas: "title title"
+											 "subtotal valor1"
+											 "envio valor2"
+											 "cupon valor3"
+											 "total valor4"
+											 "boton boton";
+	text-align: center;
+	border-radius: .4rem;
+	padding: 15px;
+}
+.box-main .item{
+	border-bottom: 1px solid lightgray;
+	padding-top: 15px;
+	margin: 0;
+}
+.box-main .item:nth-child(8){
+	border-bottom: 0;
+}
+.box-main .item:nth-child(9){
+	border-bottom: 0;
+}
+.box-main .title{
+	grid-area: title;
+	font-size: .9rem;
+	font-weight: bold;
+}
+.box-main .valor1{
+	grid-area: valor1;
+}
+.box-main .envio{
+	grid-area: envio;
+}
+.box-main .valor2{
+	grid-area: valor2;
+}
+.box-main .cupon{
+	grid-area: cupon;
+}
+.box-main .valor3{
+	grid-area: valor3;
+}
+.box-main .total{
+	grid-area: total;
+	font-weight: bold;
+}
+.box-main .valor4{
+	grid-area: valor4;
+	font-weight: bold;
+}
+.box-main .boton{
+	grid-area: boton;
+	margin: 0 9px 10px 9px;
+	padding-top: 0;
+	background-color: #7de2d1;
+	color: white;
+	border-radius: .5rem;
+	cursor: pointer;
+}
+
+/* productos del carrito */
+
+.carrito.main-title{
+	border-bottom: .8px solid lightgray;
+}
+.imagen-producto{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+.producto-seleccionado{
+	padding-top: 20px;
+}
+.cantidad-producto{
+	display: -webkit-inline-box;
+}
+.cantidad-producto p{
+	margin: 0 10px;
+}
+.cancelar{
+	cursor: pointer;
+}
+
+/* productos del carrito */
+
+/* Resumen del pedido */
+
+
+@media(max-width: 768px){
+	#menu-container{
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	#footer-container [class *="col-"]{/*lo que va entre
+		corchetes se lee así: todo elemento que tenga
+		un atributo, se especifica el resto*/
+		margin-bottom: 2em;
+	}
+}

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta badges -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <title>Plazitshop</title>
+  </head>
+  <body>
+
+    <!--header-->
+
+    <header id="header-container">
+      <div class="container">
+        <div class="row align-items-center d-flex justify-content-between">
+            <div class="col-4 colum">
+              <h1>Platzishop</h1>
+            </div>
+            <div class="col-4 colum text-right ">
+              <button class="navbar-toggler d-sm-none" data-toggle="collapse" data-target="#navMenu" aria-expanded="false" aria-controls="navMenu">
+                &#9776;
+              </button>
+              <a class="d-none d-sm-block text-uppercase font-weight-bold login " href="#">Login</a>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <!--/header-->
+
+
+    <!--Menu-->
+
+
+      <nav id="menu-container" class="navbar-toggleable navbar navbar-light bg-faded">
+        <div class="navbar-collapse collapse d-sm-block" id="navMenu">
+          <div class="container">
+            <!-- si hay error agregar esto a
+              la clase de arriba d-inline-block-->
+            <div class="row">
+              <div class="col-10 offset-1 offset-md-0 col-md-4 colum">
+                <ul class="nav navbar-nav flex-column flex-md-row justify-content-between text-center">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="catalogo.html" class="nav-link active">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Carrito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-sm-none">Login</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 offset-md-2 d-none d-sm-block colum">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                    <span class="input-group-btn">
+                      <button class="btn btn-platzi" type="button">
+                      <span class="d-none d-md-block">Buscar</span>
+                      <i class="fa fa-search d-md-none"></i>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="search-bar" class="container d-sm-none">
+        <div class="row">
+          <div class="col">
+             <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                  <span class="input-group-btn">
+                    <button class="btn btn-platzi" type="button">
+                    <span class="d-none d-md-block">Buscar</span>
+                    <i class="fa fa-search d-md-none"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+
+    <!--/Menu-->
+
+    <!-- Breadcrumbs -->
+
+    <section id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav class="breadcrumb">
+              <a href="catalogo.html" class="breadcrumb-item">Carrito</a>
+              <span class="breadcrumb-item active">Todos los productos</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /Breadcrumbs -->
+
+    <!-- Productos -->
+
+    <section id="resumen-container">
+      <div class="container">
+        <div class="row">
+
+        <!-- Productos -->
+        <div class="col-12 col-md-9">
+          <div class="carrito main-title">
+            <h2>Carrito de Compras</h2>
+          </div>
+          <div class="producto-seleccionado">
+            <div class="row">
+              <div class="imagen-producto col-12 col-md-2">
+                <img src="assets/img/note-8.png" alt="samsung Note 8" width="128px">
+              </div>
+              <div class="descripcion-producto col-12 col-md-4">
+                <p>Samsung Galaxy Note 8 SO Android 7.1.1, Procesador Snapdragon 835, Ram 6GB</p>
+              </div>
+              <div class="cantidad-producto col-6 col-md-3">
+                <p>Cantidad</p>
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="total-producto col-4 col-md-2">
+                <p><span><strong>$1000</strong></span></p>
+              </div>
+              <div class="cancelar col-1 col-md-1">
+                <img src="assets/img/cancelar.png" alt="icon cancelar" width="16px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Productos -->
+
+        <!-- Resumen pedido -->
+        <div class="col-12 col-md-3">
+          <div class="box-main">
+            <h3 class="item title">RESUMEN DEL PEDIDO</h3>
+            <p class="item subtotal">Subtotal</p>
+            <p class="item valor1">$800</p>
+            <p class="item envio">Envío</p>
+            <p class="item valor2">$25</p>
+            <p class="item cupon">Cupón</p>
+            <p class="item valor3"></p>
+            <p class="item total">Total</p>
+            <p class="item valor4">$825</p>
+            <button type="button" name="button" class="item boton">COMPRAR</button>
+          </div>
+
+        <!-- /Resumen pedido -->
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- /Productos -->
+
+
+    <!-- Footer -->
+
+    <footer id="footer-container">
+      <div class="container">
+        <div class="row text-center text-md-left">
+          <div class="col-md-4">
+            <form id="suscribeForm" action="#" method="POST" class="needs-validation" novalidate>
+              <label for="validationCustom01">¿Quieres recibir todas las novedades?</label>
+              <div class="input-group form-group align-items-center">
+                <input type="email" name="email" class="form-control" id="validationCustomEmail" placeholder="@correo" required>
+                <button type="submit" class="btn form-text">Suscribirme</button>
+                <small class="form-text text-muted">No compartiremos tu información con nadie más</small>
+                <div class="invalid-feedback">
+                  Please choose a correct email address.
+                </div>
+                <div class="valid-feedback">
+                  Thank you for subscribe!.
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3 offset-md-5">
+            <h4>Navegación</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="catalogo.html" class="nav-link">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- /Footer -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modalOferta">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Oferta exclusiva</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">Resgístrate hoy y recibe $15 de descuento
+            <form action="#" class="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo">
+                <small class="form-text text-muted">No compartiremos tu información con nadie más</small>
+              </div>
+              <button type="submit" class="btn btn-platzi form-text">Regístrame</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+
+            <button id="btnNoRegistrar" class="btn btn-warning form-text" data-dismiss="modal">No, no quiero el descuento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="assets/src/js/app.js"></script>
+    <script>
+      mostrarModal()
+    </script>
+  </body>
+</html>

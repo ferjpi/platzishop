@@ -47,9 +47,9 @@
 // function mostrarModal(){
 //   const noMostrarModal = JSON.parse("localStorage.noMostrarModal");
 //   if(!noMostrarModal){
-//     $('#modalOferta').modal();  
+//     $('#modalOferta').modal();
 //   }
-  
+
 //   $('#btnNoRegistrar').click(function (ev){
 //     localStorage.noMostrarModal = true;
 //     localStorage.noMostrarModal =! 0;
@@ -79,3 +79,22 @@ $filtrosToggle.click(function (ev){
     $i.removeClass('fa-chevron-up').addClass('fa-chevron-down')
   }
 })
+
+
+function images() {
+  const unsplash = fetch('https://api.unsplash.com/')
+  const Unsplash = new unsplash ({
+    applicationId: "{ee86195e0fb08b4979a65e374ea8c8518fa31102fc7775d466228f81ca95c435}",
+    secret: "{7d4cca3f5c1b319c0d6dba2bb23a7844b3e69234952e7f6accc1b97365e8bb31}"
+  })
+    .then(function(res) {
+      return res.json()
+    })
+    .then(function(myjson) {
+      return console.log(myjson)
+    })
+    .catch(function(err) {
+      return console.log(`se tuvo el siguiente error ${err}`)
+    })
+}
+images()
