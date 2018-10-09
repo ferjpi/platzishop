@@ -21,7 +21,8 @@ body{
 	color: white;
 }
 .btn.btn-platzi:hover{
-	background-color: #8ab542;
+	background-color: rgb(121, 176, 204);
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
 }
 input.form-control:focus{
 	border-color: #99c84a;
@@ -103,6 +104,86 @@ input.form-control:focus{
 .page-item.disabled{
 	color: #8CBAD1;
 }
+
+/* Pagina del carrito de compras */
+.titulo-pedidos {
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+}
+.box {
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: grid;
+	grid-template-areas: "t1 t1"
+						 "t2 p1"
+						 "t3 p2"
+						 "t4 p3"
+						 "btn btn";
+}
+.t1 {
+	grid-area: t1;
+	border-bottom: 1px solid #ccc;
+	text-transform: uppercase;
+}
+.t2 {
+	grid-area: t2;
+	text-align: left;
+}
+.t3 {
+	grid-area: t3;
+	text-align: left;
+}
+.t4 {
+	grid-area: t4;
+	text-align: left;
+	font-weight: bold;
+}
+.p1 {
+	grid-area: p1;
+}
+.p2 {
+	grid-area: p2;
+}
+.p3 {
+	grid-area: p3;
+	font-weight: bold;
+}
+.resumen-pedido .btn {
+	grid-area: btn;
+}
+/* Mis Pedidos */
+.item {
+	border: 1px solid #ccc;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 250px 200px 120px 50px;
+	grid-template-rows: 150px;
+	gap: 12px;
+	justify-items: center;
+	align-items: center;
+}
+.sub-items {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 50px);
+	gap: 50px;
+}
+.selection {
+	display: grid;
+	grid-template-columns: 70px 40px;
+	grid-template-rows: 30px;
+	gap: 8px;
+}
+.btn-close i {
+	color: black;
+}
+#lista-compra {
+	min-height: 60vh;
+}
+/* Mis Pedidos */
+
+/* Pagina del carrito de compras */
+
 
 @media(max-width: 768px){
 	#footer-container [class *="col-"]{/*lo que va entre
