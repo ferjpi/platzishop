@@ -17,7 +17,7 @@ body{
 	background-color: #f7f7f9;
 }
 .btn.btn-platzi{
-	background-color: #99c84a;
+	background-color: #8CBAD1;
 	color: white;
 }
 .btn.btn-platzi:hover{
@@ -95,13 +95,13 @@ input.form-control:focus{
 	margin-bottom: .5em;
 }
 #paginator-container .page-item.active .page-link{
-	background-color: #99c84a;
-	border-color:  #99c84a;
+	background-color: #8CBAD1;
+	border-color:  #8CBAD1;
 }
 .page-link,
 .page-link:hover,
 .page-item.disabled{
-	color: #99c84a;
+	color: #8CBAD1;
 }
 
 @media(max-width: 768px){
